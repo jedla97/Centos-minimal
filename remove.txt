@@ -1,7 +1,7 @@
 #!/bin/bash
 yum remove timedatex -y
 #yum remove vte-profile -y -- oddela terminal
-yum remove poppler -y
+#yum remove poppler -y -- remove evince
 yum remove teamd -y
 yum remove sssd-kcm -y
 yum remove cpio -y
@@ -16,46 +16,47 @@ yum remove garcon -y
 yum remove snapd -y
 yum remove mousepad -y
 yum remove exo -y
-yum remove xfwm4 -y
-yum remove xfconf -y
+yum remove xfwm4 -y 
+#yum remove xfconf -y #xconf
 yum autoremove -y
 yum remove openssl -y
 yum remove kbd -y
-yum remove NetworkManager -y
+#yum remove NetworkManager -y
+#neotestovano
 yum remove audit -y
 yum remove authselect -y
 yum remove openssh-server -y
 yum rhn-client-tools -y
 yum remove irqbalance -y
-yum remove acl
-yum remove cracklib-dicts
-yum remove cronie
-yum remove device-mapper-event
-yum remove diffutils
-yum remove dmidecode
-yum remove dnf-plugins-core
-yum remove e2fsprogs
+yum remove acl -y
+yum remove cracklib-dicts -y
+yum remove cronie -y
+yum remove device-mapper-event -y
+yum remove diffutils -y
+yum remove dmidecode -y
+yum remove dnf-plugins-core -y
+yum remove e2fsprogs -y
 #!find
-yum remove gettext
-yum remove gnupg2-smime
-yum remove initsscripts
-yum remove iproute
-yum remove iprutils
-yum remove iputils
-yum remove less
-yum remove logrotate
-yum remove lshw
-yum remove lsscsi
-yum remove passwd
-yum remove pinentry
-yum remove plymouth
-yum remove prefixdevname
-yum removeprocps-ng
-yum remove sg3_utils
-yum remove sg3_utils-libs
-yum remove trousers
-yum remove unbound-libs
-yum remove xfsprogs
+yum remove gettext -y
+yum remove gnupg2-smime -y
+yum remove initsscripts -y
+yum remove iproute -y
+yum remove iprutils -y
+yum remove iputils -y
+yum remove less -y
+yum remove logrotate -y
+yum remove lshw -y
+yum remove lsscsi -y
+yum remove passwd -y
+yum remove pinentry -y
+yum remove plymouth -y
+yum remove prefixdevname -y
+yum removeprocps-ng -y
+yum remove sg3_utils -y
+yum remove sg3_utils-libs -y
+yum remove trousers -y
+yum remove unbound-libs -y
+yum remove xfsprogs -y
 #anaconda
 yum remove ssd-client -y
 yum remove hostname -y
