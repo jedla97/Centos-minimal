@@ -1,16 +1,87 @@
-yum remove perl-constant
-yum remove timedatex
-yum remove gconf2
-yum remove vte-profile 
-yum remove poppler
-yum remove teamd
-yum remove sssd-kcm
-yum remove cpio
-yum remove groff-base
-yum remove libnfnetlink
-yum remove libssd
-yum remove pciutils-libs
-yum remove chrony
-yum remove parted
-yum remove groff-base
-yum remove selinux-policy
+#!/bin/bash
+yum remove timedatex -y
+#yum remove vte-profile -y -- oddela terminal
+yum remove poppler -y
+yum remove teamd -y
+yum remove sssd-kcm -y
+yum remove cpio -y
+yum remove groff-base -y
+yum remove libnfnetlink -y
+yum remove pciutils-libs -y
+yum remove chrony -y
+yum remove parted -y
+yum remove selinux-policy -y
+yum remove epel-release -y
+yum remove garcon -y
+yum remove snapd -y
+yum remove mousepad -y
+yum remove exo -y
+yum remove xfwm4 -y
+yum remove xfconf -y
+yum autoremove -y
+yum remove openssl -y
+yum remove kbd -y
+yum remove NetworkManager -y
+yum remove audit -y
+yum remove authselect -y
+yum remove openssh-server -y
+yum rhn-client-tools -y
+yum remove irqbalance -y
+yum remove acl
+yum remove cracklib-dicts
+yum remove cronie
+yum remove device-mapper-event
+yum remove diffutils
+yum remove dmidecode
+yum remove dnf-plugins-core
+yum remove e2fsprogs
+#!find
+yum remove gettext
+yum remove gnupg2-smime
+yum remove initsscripts
+yum remove iproute
+yum remove iprutils
+yum remove iputils
+yum remove less
+yum remove logrotate
+yum remove lshw
+yum remove lsscsi
+yum remove passwd
+yum remove pinentry
+yum remove plymouth
+yum remove prefixdevname
+yum removeprocps-ng
+yum remove sg3_utils
+yum remove sg3_utils-libs
+yum remove trousers
+yum remove unbound-libs
+yum remove xfsprogs
+#anaconda
+yum remove ssd-client -y
+yum remove hostname -y
+
+rm -rf /usr/games
+rm -rf /usr/share/locale
+rm -rf /usr/share/sounds
+rm -rf /usr/share/games
+rm -rf /usr/share/system-config-printer
+rm -rf /usr/share/zoneinfo
+rm -rf /usr/share/backgrounds
+rm -rf /usr/share/icons/default
+rm -rf /usr/share/icons/gnome
+rm -rf /usr/share/icons/HighContrast
+rm -rf /usr/lib/udev prefixdevname
+rm -rf /usr/lib/firmware/amdgpu
+rm -rf /usr/lib/firmware/netronome
+rm -rf /usr/lib/python3.6/site-packages/pip
+rm -rf /usr/lib/locale --odmazani vsech az na gb a us
+rm -rf /usr/share/doc/epel-release
+rm -rf /usr/share/doc/openssh
+rm -rf /usr/share/doc/HTML
+rm -rf /usr/share/doc/openssl
+rm -rf /usr/share/doc/dnf
+rm -rf /usr/share/doc/kbd
+rm -rf /media
+rm -rf /media
+
+
