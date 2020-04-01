@@ -36,7 +36,7 @@ yum remove diffutils -y
 yum remove dmidecode -y
 yum remove dnf-plugins-core -y
 yum remove e2fsprogs -y
-#!find
+yum remove findutils -y
 yum remove gettext -y
 yum remove gnupg2-smime -y
 yum remove initsscripts -y
