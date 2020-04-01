@@ -1,0 +1,16 @@
+remove perl-constant
+remove timedatex
+remove gconf2
+remove vte-profile 
+remove poppler
+remove teamd
+remove sssd-kcm
+remove cpio
+remove groff-base
+remove libnfnetlink
+remove libssd
+remove pciutils-libs
+remove chrony
+remove parted
+remove groff-base
+remove selinux-policy
