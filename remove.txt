@@ -1,16 +1,16 @@
-perl-constant
-timedatex
-gconf2
-vte-profile 
-poppler
-teamd
-sssd-kcm
-cpio
-groff-base
-libnfnetlink
-libssd
-pciutils-libs
-chrony
-parted
-groff-base
-selinux-policy
+yum remove perl-constant
+yum remove timedatex
+yum remove gconf2
+yum remove vte-profile 
+yum remove poppler
+yum remove teamd
+yum remove sssd-kcm
+yum remove cpio
+yum remove groff-base
+yum remove libnfnetlink
+yum remove libssd
+yum remove pciutils-libs
+yum remove chrony
+yum remove parted
+yum remove groff-base
+yum remove selinux-policy
