@@ -1,6 +1,6 @@
 #!/bin/bash
 yum remove timedatex -y
-#yum remove vte-profile -y -- oddela terminal
+#yum remove vte-profile -y -- remove terminal
 #yum remove poppler -y -- remove evince
 yum remove teamd -y
 yum remove sssd-kcm -y
@@ -17,12 +17,11 @@ yum remove snapd -y
 yum remove mousepad -y
 yum remove exo -y
 yum remove xfwm4 -y 
-#yum remove xfconf -y #xconf
+#yum remove xfconf -y --remove terminal
 yum autoremove -y
 yum remove openssl -y
 yum remove kbd -y
-#yum remove NetworkManager -y
-#neotestovano
+#yum remove NetworkManager -y --delete internet conection
 yum remove audit -y
 yum remove authselect -y
 yum remove openssh-server -y
@@ -57,7 +56,6 @@ yum remove sg3_utils-libs -y
 yum remove trousers -y
 yum remove unbound-libs -y
 yum remove xfsprogs -y
-#anaconda
 yum remove ssd-client -y
 yum remove hostname -y
 
@@ -74,8 +72,40 @@ rm -rf /usr/share/icons/HighContrast
 rm -rf /usr/lib/udev prefixdevname
 rm -rf /usr/lib/firmware/amdgpu
 rm -rf /usr/lib/firmware/netronome
+#rm -rf /usr/lib/firmware/GPL-2
+#rm -rf /usr/lib/firmware/GPL-3
+#rm -rf /usr/lib/os-release
+rm -rf /usr/lib/games
 rm -rf /usr/lib/python3.6/site-packages/pip
-rm -rf /usr/lib/locale --odmazani vsech az na gb a us
+rm -rf /usr/lib/locale/en_AG
+rm -rf /usr/lib/locale/en_AU
+rm -rf /usr/lib/locale/en_AU.utf8
+rm -rf /usr/lib/locale/en_BW
+rm -rf /usr/lib/locale/en_BW.utf8
+rm -rf /usr/lib/locale/en_CA
+rm -rf /usr/lib/locale/en_CA.utf8
+rm -rf /usr/lib/locale/en_DK
+rm -rf /usr/lib/locale/en_DK.utf8
+rm -rf /usr/lib/locale/en_HK
+rm -rf /usr/lib/locale/en_HK.utf8
+rm -rf /usr/lib/locale/en_IE
+rm -rf /usr/lib/locale/en_IE@euro
+rm -rf /usr/lib/locale/en_IE.utf8
+rm -rf /usr/lib/locale/en_IL
+rm -rf /usr/lib/locale/en_IN
+rm -rf /usr/lib/locale/en_NG
+rm -rf /usr/lib/locale/en_NZ
+rm -rf /usr/lib/locale/en_NZ.utf8
+rm -rf /usr/lib/locale/en_PH
+rm -rf /usr/lib/locale/en_PH.utf8
+rm -rf /usr/lib/locale/en_SC.utf8
+rm -rf /usr/lib/locale/en_SG
+rm -rf /usr/lib/locale/en_SG.utf8
+rm -rf /usr/lib/locale/en_ZA
+rm -rf /usr/lib/locale/en_ZA.utf8
+rm -rf /usr/lib/locale/en_ZM
+rm -rf /usr/lib/locale/en_ZW
+rm -rf /usr/lib/locale/en_ZW.utf8
 rm -rf /usr/share/doc/epel-release
 rm -rf /usr/share/doc/openssh
 rm -rf /usr/share/doc/HTML
