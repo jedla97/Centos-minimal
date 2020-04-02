@@ -1,4 +1,9 @@
 #!/bin/bash
+#:set ff=UNIX --retype from win to unix
+# for pdf and web
+yum install seamonkey -y 
+yum install evince -y
+# remove useless stuff
 yum remove timedatex -y
 #yum remove vte-profile -y -- remove terminal
 #yum remove poppler -y -- remove evince
@@ -123,8 +128,8 @@ rm -rf /var/log/README
 rm -rf /var/log/secure
 rm -rf /usr/share/man
 rm -rf /usr/share/help
-
-del mlocate and findutils yum
+yum install mlocate -y
+yum install findutils -y
 locate README > readme.txt
 cat readme.txt | xargs rm
 locate AUTHOR > readme.txt
@@ -143,6 +148,7 @@ locate Change > readme.txt
 cat readme.txt | xargs rm
 locate CHANGE> readme.txt
 cat readme.txt | xargs rm
-
+yum remove findutils -y
+yum remove mlocate -y
 rm -rf /var/log/*
 rm -rf /usr/lib/modules/4.18.0.-174.el8.x86_64
