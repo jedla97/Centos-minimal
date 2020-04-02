@@ -25,7 +25,7 @@ yum remove kbd -y
 yum remove audit -y
 yum remove authselect -y
 yum remove openssh-server -y
-yum rhn-client-tools -y
+yum remove rhn-client-tools -y
 yum remove irqbalance -y
 yum remove acl -y
 yum remove cracklib-dicts -y
@@ -50,7 +50,7 @@ yum remove passwd -y
 yum remove pinentry -y
 yum remove plymouth -y
 yum remove prefixdevname -y
-yum removeprocps-ng -y
+yum remove procps-ng -y
 yum remove sg3_utils -y
 yum remove sg3_utils-libs -y
 yum remove trousers -y
@@ -58,7 +58,6 @@ yum remove unbound-libs -y
 yum remove xfsprogs -y
 yum remove ssd-client -y
 yum remove hostname -y
-
 rm -rf /usr/games
 rm -rf /usr/share/locale
 rm -rf /usr/share/sounds
@@ -69,13 +68,13 @@ rm -rf /usr/share/backgrounds
 rm -rf /usr/share/icons/default
 rm -rf /usr/share/icons/gnome
 rm -rf /usr/share/icons/HighContrast
-rm -rf /usr/lib/udev prefixdevname
+rm -rf /usr/lib/udev/prefixdevname
 rm -rf /usr/lib/firmware/amdgpu
 rm -rf /usr/lib/firmware/netronome
-#rm -rf /usr/lib/firmware/GPL-2
-#rm -rf /usr/lib/firmware/GPL-3
-#rm -rf /usr/lib/os-release
+rm -rf /usr/lib/firmware/GPL-2
+rm -rf /usr/lib/firmware/GPL-3
 rm -rf /usr/lib/games
+#rm -rf /usr/lib/os-release -- definitly dont rm
 rm -rf /usr/lib/python3.6/site-packages/pip
 rm -rf /usr/lib/locale/en_AG
 rm -rf /usr/lib/locale/en_AU
@@ -113,6 +112,37 @@ rm -rf /usr/share/doc/openssl
 rm -rf /usr/share/doc/dnf
 rm -rf /usr/share/doc/kbd
 rm -rf /media
-rm -rf /media
+rm -rf Downloads/
+rm -rf /usr/lib64/seamonkey/extensions
+rm -rf /bin/xorg-x11-fonts-update-dirs
+rm -rf /var/games
+rm -rf /var/goopher
+rm -rf /var/ftp
+rm -rf /var/kerberos
+rm -rf /var/log/README
+rm -rf /var/log/secure
+rm -rf /usr/share/man
+rm -rf /usr/share/help
 
+del mlocate and findutils yum
+locate README > readme.txt
+cat readme.txt | xargs rm
+locate AUTHOR > readme.txt
+cat readme.txt | xargs rm
+locate THANKS > readme.txt
+cat readme.txt | xargs rm
+locate NEWS > readme.txt
+cat readme.txt | xargs rm
+locate TODO > readme.txt
+cat readme.txt | xargs rm
+locate HACK > readme.txt
+cat readme.txt | xargs rm
+locate TRANSL > readme.txt
+cat readme.txt | xargs rm
+locate Change > readme.txt
+cat readme.txt | xargs rm
+locate CHANGE> readme.txt
+cat readme.txt | xargs rm
 
+rm -rf /var/log/*
+rm -rf /usr/lib/modules/4.18.0.-174.el8.x86_64
