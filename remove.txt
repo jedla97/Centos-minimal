@@ -148,7 +148,10 @@ locate Change > readme.txt
 cat readme.txt | xargs rm
 locate CHANGE> readme.txt
 cat readme.txt | xargs rm
+rm -rf readme.txt
+locate .txt> readme.txt
+cat readme.txt | xargs rm
+rm -rf readme.txt
 yum remove findutils -y
 yum remove mlocate -y
 rm -rf /var/log/*
-rm -rf /usr/lib/modules/4.18.0.-174.el8.x86_64
