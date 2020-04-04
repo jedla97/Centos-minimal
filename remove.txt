@@ -4,6 +4,7 @@
 yum install seamonkey -y 
 yum install evince -y
 # remove useless stuff
+yum remove git -y
 yum remove timedatex -y
 #yum remove vte-profile -y -- remove terminal
 #yum remove poppler -y -- remove evince
