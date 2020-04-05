@@ -126,7 +126,6 @@ rm -rf /var/goopher
 rm -rf /var/ftp
 rm -rf /var/kerberos
 rm -rf /var/log/README
-rm -rf /var/log/secure
 rm -rf /usr/share/man
 rm -rf /usr/share/help
 yum install mlocate -y
