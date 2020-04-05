@@ -9,7 +9,7 @@ yum remove timedatex -y
 #yum remove vte-profile -y -- remove terminal
 #yum remove poppler -y -- remove evince
 yum remove teamd -y
-yum remove sssd-kcm -y
+#yum remove sssd-kcm -y
 yum remove cpio -y
 yum remove groff-base -y
 yum remove libnfnetlink -y
@@ -155,4 +155,3 @@ cat readme.txt | xargs rm
 rm -rf readme.txt
 yum remove findutils -y
 yum remove mlocate -y
-rm -rf /var/log/*
